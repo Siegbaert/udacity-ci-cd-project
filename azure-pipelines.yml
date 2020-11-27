@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: 'd2775194-6115-49ce-a5a2-8908786209f5'
   
   # Web app name
-  webAppName: ''
+  webAppName: 'udacity-ci-cd-project-webapp'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: ''
+  environmentName: 'prod'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
