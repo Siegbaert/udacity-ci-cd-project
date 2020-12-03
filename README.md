@@ -29,6 +29,7 @@ The following steps show how to set-up the first part of the project:
 A simple python application with CI/CD using GitHub Actions
 
 1. Clone the repository: `git@github.com:Siegbaert/udacity-ci-cd-project.git`
+![Cloned Repository](img/screenshots/01_ClonedRepository.PNG "Successful prediction")
 
 2. Switch to scaffold project folder: `cd scaffold`
 
@@ -39,41 +40,38 @@ A simple python application with CI/CD using GitHub Actions
 5. Run `make all`
 ![Exemplary Output of make all](img/screenshots/06a_SuccessfulMakeAll.PNG "Exemplary Output of make all")
 6. Modify test to fail and run `make test`:
-![alt text](img/screenshots/07_FailedTest.PNG)
+![Exemplary output of a failed test](img/screenshots/07_FailedTest.PNG "Exemplary output of a failed test")
 
 ### Project Set-Up (ML - Boston House Price Prediction)
 
 1. Ensure you're at the root-directory of the repository
 
-2. 
-* Project running on Azure App Service
+2. Create python virtual environment: `python3 -m venv ~/.pyvenv-cicd_project`
 
-* Project cloned into Azure Cloud Shell
+3. Source the virtual environment: `source ~/.pyvenv-cicd_project/bin/activate`
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
+4. Upgrade Pip: `python -m pip install --upgrade pip`
 
-* Output of a test run
+5. Install required python modules: `pip install -r requirements.txt`
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+6. Run the web-app: `az webapp up --sku F1 -n udacity-ci-cd-project-webapp`
 
-* Running Azure App Service from Azure Pipelines automatic deployment
+7. Make a prediction: `./make_predict_azure_app.sh`
+![Successful prediction](img/screenshots/12_SuccessfulyMakePredictPostCall.PNG "Successful prediction")
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+8. Display logs of the web-app: `az webapp log tail`
+![WebApp Logs](img/screenshots/13_WebAppLogs.PNG "WebApp Logs")
 
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
-
-* Output of streamed log files from deployed application
-
-> 
+9. Azure web-app running (Azure Portal)
+![Azure Portal - WebApp Running](img/screenshots/14_AzurePortal_WebAppRunning.PNG "Azure Portal - WebApp Running")
 
 ## Enhancements
+The following points could done to enhance in this project:
 
-<TODO: A short description of how to improve the project in the future>
+* Separate into different environments (e.g. DEV, INT, PROD)
+* Only allow changes to "master" via Pull Requests from a separate branch
+* Enforce a policy that branches can only be merged into master if PR is reviewed by at least one additional person
+* ...
 
 ## Demo 
 
