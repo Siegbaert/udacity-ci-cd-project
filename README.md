@@ -65,6 +65,27 @@ A simple python application with CI/CD using GitHub Actions
 9. Azure web-app running (Azure Portal)
 ![Azure Portal - WebApp Running](img/screenshots/14_AzurePortal_WebAppRunning.PNG "Azure Portal - WebApp Running")
 
+10. Successful Azure Pipeline Run
+![Azure Pipeline - Successful Run](img/screenshots/15_SuccessfulAzurePipelineRun.PNG "Azure Pipeline - Successful Run")
+
+## Locust
+Locust is a tool for load-testing web-applications.
+The created `locustfile.py` contains the necessary code to get predictions by calling the deployed WebApp.
+
+1. Run locust locally: `locust`
+
+2. Go to Locust WebUi: `http://localhost:8089/`
+
+3. Enter Test-Setup: e.g. Users=25, SpawnRate=1, Host: https://udacity-ci-cd-project-webapp.azurewebsites.net:443 
+
+### Screenshots
+
+* Locust running with 1 user:  
+![Locust running with 1 user](img/screenshots/16_Locust_1User.PNG "Locust running with 1 user")
+
+* Locust running with 25 user:  
+![Locust running with 25 users](img/screenshots/16_Locust_25Users.PNG "Locust running with 25 users")
+
 ## Enhancements
 The following points could done to enhance in this project:
 
