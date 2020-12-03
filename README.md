@@ -10,8 +10,8 @@ We were given a pre-trained `sklearn` model that predicts housing prices in Bost
 ## Project Plan
 Below you'll find the links to the Trello Board as wall as the spreadsheet including the project's plan.
 
-* [Trello Board](https://trello.com/b/Pdt6RSCR)
-* [Project Plan](/docs/ProjectPlan.xlsx)
+* Link to the [Trello Board](https://trello.com/b/Pdt6RSCR)
+* Link to the [Project Plan](/docs/ProjectPlan.xlsx)
 
 ## Instructions
 Below you'll find an high-level architecture of what this project consists of:
@@ -92,10 +92,6 @@ The following points could done to enhance in this project:
 * Separate into different environments (e.g. DEV, INT, PROD)
 * Only allow changes to "master" via Pull Requests from a separate branch
 * Enforce a policy that branches can only be merged into master if PR is reviewed by at least one additional person
-* ...
 
 ## Demo 
-
-<TODO: Add link Screencast on YouTube>
-
-
+Please find the Youtube link with the project demo [here](https://www.youtube.com/watch?v=PcotV0KLito) :)
