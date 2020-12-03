@@ -15,7 +15,7 @@ Below you'll find the links to the Trello Board as wall as the spreadsheet inclu
 
 ## Instructions
 Below you'll find an high-level architecture of what this project consists of:
-![alt text](img/ArchitectureOverview.png "Architecture Overview")
+![Architecture Overview](img/ArchitectureOverview.png "Architecture Overview")
 *Source: Image taken from Udacity Course "DevOps Engineer for Microsoft Azure"*
 
 The idea is to create a CI/CD pipeline using `Azure Pipelines`.  
@@ -37,10 +37,9 @@ A simple python application with CI/CD using GitHub Actions
 4. Source the virtual environment: `source ~/.pyvenv-cicd_project/bin/activate`
 
 5. Run `make all`
-![Exemplary Output of make all](img/screenshots/06a_SuccessfulMakeAll.png)
-
+![Exemplary Output of make all](img/screenshots/06a_SuccessfulMakeAll.PNG "Exemplary Output of make all")
 6. Modify test to fail and run `make test`:
-![alt text](img/screenshots/07_FailedTest.png)
+![alt text](img/screenshots/07_FailedTest.PNG)
 
 ### Project Set-Up (ML - Boston House Price Prediction)
 
