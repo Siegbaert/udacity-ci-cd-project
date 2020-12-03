@@ -1,18 +1,16 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
-create a scaffolding that will assist you in performing both Continuous Integration and Continuous Delivery. You'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, you'll integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
+In this project we created a a Continuous Integration and Continuous Delivery chain from scratch.   
+We used `Github Actions` along with a Makefile, requirements.txt and some basic python code to perform an initial lint, test, and install cycle.  
+After having successfully finalized this basic CI/CD chain with `Github Actions`, it was time for some nice integration with `Azure Pipelines`.
 
-You are given a pre-trained, sklearn model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. If you're curious, you can read more about the data, which was initially taken from Kaggle, on the data source site. This project tests your ability to operationalize a Python flask app—in a provided file, app.py—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
-
-Documentation:
-https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops
+For the `Azure Pipelines` integration, we replaced the initial code completely.  
+We were given a pre-trained `sklearn` model that predicts housing prices in Boston.
 
 ## Project Plan
-<TODO: Project Plan
+Below you'll find the links to the Trello Board as wall as the spreadsheet including the project's plan.
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* [Trello Board](https://trello.com/b/Pdt6RSCR)
 * [Project Plan](/docs/ProjectPlan.xlsx)
 
 ## Instructions
@@ -20,7 +18,9 @@ Below you'll find an high-level architecture of what this project consists of:
 ![alt text](img/ArchitectureOverview.png "Architecture Overview")
 Source: Image taken from Udacity Course "DevOps Engineer for Microsoft Azure"
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+The idea is to create a CI/CD pipeline using `Azure Pipelines`.  
+The pipeline should run on every commit to the `master`-branch which is located in a `GitHub` repository.
+Purpose of the pipeline is to update the Azure WebApp based on the provided python-code in the repository.
 
 ### Project Set-Up
 
