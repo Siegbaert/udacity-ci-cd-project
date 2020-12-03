@@ -37,10 +37,10 @@ A simple python application with CI/CD using GitHub Actions
 4. Source the virtual environment: `source ~/.pyvenv-cicd_project/bin/activate`
 
 5. Run `make all`
-![alt text](img/screenshots/06a_SuccessfulMakeAll.png "Exemplary Output of `make all`")
+![Exemplary Output of make all](img/screenshots/06a_SuccessfulMakeAll.png)
 
 6. Modify test to fail and run `make test`:
-![alt text](img/screenshots/07_FailedTest.png "Example of a failed test")
+![alt text](img/screenshots/07_FailedTest.png)
 
 ### Project Set-Up (ML - Boston House Price Prediction)
 
