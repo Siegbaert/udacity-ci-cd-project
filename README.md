@@ -16,22 +16,37 @@ Below you'll find the links to the Trello Board as wall as the spreadsheet inclu
 ## Instructions
 Below you'll find an high-level architecture of what this project consists of:
 ![alt text](img/ArchitectureOverview.png "Architecture Overview")
-Source: Image taken from Udacity Course "DevOps Engineer for Microsoft Azure"
+*Source: Image taken from Udacity Course "DevOps Engineer for Microsoft Azure"*
 
 The idea is to create a CI/CD pipeline using `Azure Pipelines`.  
 The pipeline should run on every commit to the `master`-branch which is located in a `GitHub` repository.
 Purpose of the pipeline is to update the Azure WebApp based on the provided python-code in the repository.
 
-### Project Set-Up
+### Project Set-Up (Scaffold)
+![Python Scaffold App Status](https://github.com/Siegbaert/udacity-ci-cd-project/workflows/Python%20application/badge.svg)
 
-1. Cloning
+The following steps show how to set-up the first part of the project:  
+A simple python application with CI/CD using GitHub Actions
 
-2. Make all
+1. Clone the repository: `git@github.com:Siegbaert/udacity-ci-cd-project.git`
+
+2. Switch to scaffold project folder: `cd scaffold`
+
+3. Create python virtual environment: `python3 -m venv ~/.pyvenv-cicd_project`
+
+4. Source the virtual environment: `source ~/.pyvenv-cicd_project/bin/activate`
+
+5. Run `make all`
 ![alt text](img/screenshots/06a_SuccessfulMakeAll.png "Exemplary Output of `make all`")
 
-3. Example of an unsuccessful test-run
+6. Modify test to fail and run `make test`:
 ![alt text](img/screenshots/07_FailedTest.png "Example of a failed test")
 
+### Project Set-Up (ML - Boston House Price Prediction)
+
+1. Ensure you're at the root-directory of the repository
+
+2. 
 * Project running on Azure App Service
 
 * Project cloned into Azure Cloud Shell
